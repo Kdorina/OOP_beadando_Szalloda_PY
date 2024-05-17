@@ -80,9 +80,9 @@ def foglalas_listazas():
     return foglalas_lista
 
 szalloda = Szalloda("Pandora Grand Hotel")
-szalloda.hozzaad_szoba(EgyagyasSzoba(101))
-szalloda.hozzaad_szoba(KetagyasSzoba(102))
-szalloda.hozzaad_szoba(KetagyasSzoba(103))
+szalloda.szoba_felvetel(EgyagyasSzoba(101))
+szalloda.szoba_felvetel(KetagyasSzoba(102))
+szalloda.szoba_felvetel(KetagyasSzoba(103))
 
 foglalasok.append(Foglalas(101, date(2024, 5, 20)))
 foglalasok.append(Foglalas(101, date(2024, 5, 21)))
