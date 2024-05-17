@@ -48,4 +48,19 @@ class Szalloda:
         
         return elerheto_szobak
     
+class Foglalas:
+    def __init__(self, szoba_szam, datum):
+        self.szoba_szam = szoba_szam
+        self.datum = datum
+
 foglalasok = []
+
+def szoba_fogalalas(szalloda, szoba_szam, datum):
+    if datum <= date.today():
+        return 'Kérem adjon meg jövőbeni dátumot!'
+    elerheto_szobak = szalloda.elerheto_szobak(datum)
+    for szoba in elerheto_szobak:
+        if szoba_szam == szoba_szam:
+            uj_foglalas = Foglalas(szoba_szam, datum)
+            foglalasok.append(uj_foglalas)
+            return f"Gratulálunk, foglalása sikeres volt! Foglalásának összege: {szoba.ar} Ft"
