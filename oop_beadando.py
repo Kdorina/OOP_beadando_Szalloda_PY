@@ -115,3 +115,5 @@ foglalasok.append(Foglalas(101, date(2024, 5, 21)))
 foglalasok.append(Foglalas(102, date(2024, 5, 20)))
 foglalasok.append(Foglalas(102, date(2024, 5, 21)))
 foglalasok.append(Foglalas(103, date(2024, 5, 22)))
+
+felhasznaloi_interfesz()
