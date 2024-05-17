@@ -34,4 +34,18 @@ class Szalloda:
         else:
             print(f"A {szoba.szam} számú szoba már létezik a szállodában.")
 
-   
+    def elerheto_szobak(self, datum):
+        
+        foglalt_szobak = set()
+        for f in foglalasok:
+            if f.datum == datum:
+                foglalt_szobak.add(f.szoba_szam)
+                
+        elerheto_szobak = []
+        for szoba in self.szobak:
+            if szoba.szam not in foglalt_szobak:
+                elerheto_szobak.append(szoba)
+        
+        return elerheto_szobak
+    
+foglalasok = []
