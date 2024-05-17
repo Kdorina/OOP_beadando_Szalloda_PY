@@ -78,3 +78,14 @@ def foglalas_listazas():
     for f in foglalasok:
         foglalas_lista.append(f"Szoba: {f.szoba_szam}, Dátum: {f.datum}")
     return foglalas_lista
+
+szalloda = Szalloda("Pandora Grand Hotel")
+szalloda.hozzaad_szoba(EgyagyasSzoba(101))
+szalloda.hozzaad_szoba(KetagyasSzoba(102))
+szalloda.hozzaad_szoba(KetagyasSzoba(103))
+
+foglalasok.append(Foglalas(101, date(2024, 5, 20)))
+foglalasok.append(Foglalas(101, date(2024, 5, 21)))
+foglalasok.append(Foglalas(102, date(2024, 5, 20)))
+foglalasok.append(Foglalas(102, date(2024, 5, 21)))
+foglalasok.append(Foglalas(103, date(2024, 5, 22)))
