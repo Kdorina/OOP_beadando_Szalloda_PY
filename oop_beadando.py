@@ -66,7 +66,7 @@ def szoba_fogalalas(szalloda, szoba_szam, datum):
             return f"Gratulálunk, foglalása sikeres volt! Foglalásának összege: {szoba.ar} Ft"
     return "Sajnálattal közöljük, a szoba nem elérhető a kiválaszott dátumon"
 
-def lemond_foglalas(szoba_szam, datum):
+def foglalas_lemondas(szoba_szam, datum):
     for foglalas in foglalasok:
         if foglalas.szoba_szam == szoba_szam and foglalas.datum == datum:
             foglalasok.remove(foglalas)
