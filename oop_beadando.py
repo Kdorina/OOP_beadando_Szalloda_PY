@@ -9,4 +9,16 @@ class Szoba(ABC):
     @abstractmethod
     def szoba_tipus(self):
         pass
-    
+class EgyagyasSzoba(Szoba):
+    def __init__(self, szam):
+        super().__init__(szam, 10000)
+
+    def szoba_tipus(self):
+        return "Egyágyas szoba"
+
+class KetagyasSzoba(Szoba):
+    def __init__(self, szam):
+        super().__init__(szam, 15000)
+
+    def szoba_tipus(self):
+        return "Kétágyas szoba"
