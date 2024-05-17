@@ -22,3 +22,16 @@ class KetagyasSzoba(Szoba):
 
     def szoba_tipus(self):
         return "Kétágyas szoba"
+
+class Szalloda:
+    def __init__(self, nev):
+        self.nev = nev
+        self.szobak = []
+
+    def szoba_felvetel(self, szoba):
+        if szoba not in self.szobak:
+            self.szobak.append(szoba)
+        else:
+            print(f"A {szoba.szam} számú szoba már létezik a szállodában.")
+
+   
