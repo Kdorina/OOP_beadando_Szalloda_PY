@@ -64,3 +64,4 @@ def szoba_fogalalas(szalloda, szoba_szam, datum):
             uj_foglalas = Foglalas(szoba_szam, datum)
             foglalasok.append(uj_foglalas)
             return f"Gratulálunk, foglalása sikeres volt! Foglalásának összege: {szoba.ar} Ft"
+    return "Sajnálattal közöljük, a szoba nem elérhető a kiválaszott dátumon"
