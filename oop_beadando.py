@@ -72,3 +72,9 @@ def foglalas_lemondas(szoba_szam, datum):
             foglalasok.remove(foglalas)
             return "Fogalalását sikeresen lemondta!"
     return "Nincs ilyen foglalás!"
+
+def foglalas_listazas():
+    foglalas_lista = []
+    for f in foglalasok:
+        foglalas_lista.append(f"Szoba: {f.szoba_szam}, Dátum: {f.datum}")
+    return foglalas_lista
